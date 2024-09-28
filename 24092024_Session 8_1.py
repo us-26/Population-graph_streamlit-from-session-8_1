@@ -1,7 +1,8 @@
 import pandas as pd
 import streamlit as smt
 
-data = pd.read_csv("population.csv")
+url = "https://raw.githubusercontent.com/us-26/Population-graph_streamlit-from-session-8_1/refs/heads/main/population.csv?token=GHSAT0AAAAAACYFFCLIUKNR5KZVXUJEFHTKZXXVJJQ"
+data = pd.read_csv(url)
 data = data.drop(columns = ["Unnamed: 0"])
 
 unique_countries = data["country"].unique().tolist()
