@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as smt
 
-url = "https://raw.githubusercontent.com/us-26/Population-graph_streamlit-from-session-8_1/refs/heads/main/population.csv?token=GHSAT0AAAAAACYFFCLIUKNR5KZVXUJEFHTKZXXVJJQ"
+url = "https://raw.githubusercontent.com/us-26/Population-graph_streamlit-from-session-8_1/refs/heads/main/population.csv"
 data = pd.read_csv(url)
 data = data.drop(columns = ["Unnamed: 0"])
 
